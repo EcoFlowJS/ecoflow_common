@@ -1,0 +1,26 @@
+{
+  "name": "ecoflow_common",
+  "version": "0.0.2",
+  "description": "",
+  "main": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc --build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "ecoModule": {
+    "middleware": "./dist/middleware.js",
+    "response": "./dist/response.js",
+    "debug": "./dist/debug.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@ecoflow/types": "^0.0.14"
+  }
+}
