@@ -10,7 +10,7 @@ async function debug(this: EcoContext) {
       debugConsole: ["WebConsole"],
     };
 
-  const { inputs, debugPayload } = this;
+  const { inputs, moduleDatas, debugPayload } = this;
   const { debugOutput, debugExp, debugConsole } = inputs!;
   const result = Object.create({});
 
@@ -33,10 +33,17 @@ async function debug(this: EcoContext) {
   }
 
   if (debugConsole.includes("WebConsole"))
-    server.systemSocket.emit("DebugWebConsole", result.msg);
+    server.systemSocket.emit("DebugWebConsole", [
+      moduleDatas?.label,
+      result.msg,
+    ]);
 
   if (debugConsole.includes("Terminal"))
-    log.info(_.isString(result.msg) ? result.msg : JSON.stringify(result.msg));
+    log.info(
+      `${moduleDatas?.label} : ${
+        _.isString(result.msg) ? result.msg : JSON.stringify(result.msg)
+      }`
+    );
 }
 
 module.exports = debug;

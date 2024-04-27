@@ -1,6 +1,6 @@
 {
   "name": "ecoflow_common",
-  "version": "0.0.3",
+  "version": "0.0.30",
   "description": "",
   "main": "./dist/index.js",
   "files": [
@@ -21,6 +21,6 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
-    "@ecoflow/types": "^0.0.14"
+    "@ecoflow/types": "^0.0.15"
   }
 }
