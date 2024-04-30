@@ -9,7 +9,9 @@
   "scripts": {
     "build": "tsc --build"
   },
-  "keywords": [],
+  "keywords": [
+    "EcoFlow"
+  ],
   "author": "",
   "license": "ISC",
   "ecoModule": {
