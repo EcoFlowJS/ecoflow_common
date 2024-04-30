@@ -10,7 +10,7 @@
     "build": "tsc --build"
   },
   "keywords": [
-    "EcoFlow"
+    "EcoFlowModule"
   ],
   "author": "",
   "license": "ISC",
