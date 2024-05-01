@@ -1,5 +1,5 @@
 {
-  "name": "ecoflow-common",
+  "name": "ecoflow-commons",
   "version": "0.0.35",
   "description": "",
   "main": "./dist/index.js",
