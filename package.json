@@ -1,7 +1,6 @@
 {
   "name": "ecoflow-commons",
   "version": "0.0.36",
-  "description": "",
   "main": "./dist/index.js",
   "files": [
     "dist"
@@ -25,5 +24,14 @@
   },
   "dependencies": {
     "@ecoflow/types": "^0.0.15"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EcoFlowJS/ecoflow_common.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EcoFlowJS/ecoflow_common/issues"
+  },
+  "homepage": "https://github.com/EcoFlowJS/ecoflow_common#readme",
+  "description": ""
 }
