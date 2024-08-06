@@ -4,7 +4,6 @@ async function debug(this: EcoContext) {
   const { _, server, log } = ecoFlow;
   if (_.isUndefined(this.inputs))
     this.inputs = {
-      ...this.inputs,
       debugOutput: "Complete",
       debugExp: "",
       debugConsole: ["WebConsole"],

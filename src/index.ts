@@ -28,6 +28,24 @@ const manifest: () => ModuleManifest = () => ({
       type: "Debug",
       controller: "debug",
     },
+    {
+      name: "Event Listener",
+      type: "EventListener",
+      controller: "eventListener",
+    },
+    {
+      name: "Event Emitter",
+      type: "EventEmitter",
+      inputs: [
+        {
+          name: "fromPayload",
+          type: "Checkbox",
+          label: "From Payload",
+          hint: "For from Payload enter the payload key instead of actual payload in the payload field.",
+        },
+      ],
+      controller: "eventEmitter",
+    },
   ],
 });
 

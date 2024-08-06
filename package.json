@@ -6,7 +6,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc --build"
+    "build": "tsc --build",
+    "watch": "tsc --watch"
   },
   "keywords": [
     "EcoFlow",
@@ -17,13 +18,15 @@
   "ecoModule": {
     "middleware": "./dist/middleware.js",
     "response": "./dist/response.js",
-    "debug": "./dist/debug.js"
+    "debug": "./dist/debug.js",
+    "eventListener": "./dist/eventListener.js",
+    "eventEmitter": "./dist/eventEmitter.js"
   },
   "devDependencies": {
     "typescript": "^5.4.5"
   },
   "dependencies": {
-    "@ecoflow/types": "^0.0.15"
+    "@ecoflow/types": "file:../eco-flow/packages/types"
   },
   "repository": {
     "type": "git",
